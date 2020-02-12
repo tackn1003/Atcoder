@@ -1,0 +1,31 @@
+t = input().split(" ")
+
+N = int(t[0])
+K = int(t[1])
+
+p = list(map(int,input().split(" ")))
+
+ans = 0
+a =0
+
+for i in range(len(p)):
+    #a = list(range(1,p[i]+1))
+    #print(a)
+    p[i] = ((p[i]*(p[i]+1))/2)/p[i]
+    a += p[i]
+    
+    if i >= K-1:
+        
+        if i >= K:
+            a += -(p[i-K])
+        if a > ans:
+            ans = a
+
+print(ans)
+
+    
+    
+
+
+
+

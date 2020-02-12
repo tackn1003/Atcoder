@@ -1,0 +1,21 @@
+N = int(input())
+
+s = input().split(" ")
+
+b = len(s)
+
+s = set(s)
+
+a = len(s)
+
+
+
+if a == b:
+  print("YES")
+else:
+  print("NO")
+
+
+
+
+
